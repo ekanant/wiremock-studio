@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  wiremock-studio:
+    image: "up9inc/wiremock-studio:2.32.0-18"
+    ports:
+      - "9000:9000"
+      - "8000:8000"
+      #- "8000-8100:8000-8100"
+    volumes:
+      - "./data-docker/wiremock/:/home/wiremock"
